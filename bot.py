@@ -1,8 +1,8 @@
 from pyrogram import Client, filters
 from config import *
+import os
 
-
-START_MESSAGE = "Start Command"
+START_MESSAGE = os.environ.get("START_MESSAGE")
 
 Bot = Client(
     bot_token=BOT_TOKEN,
