@@ -15,7 +15,7 @@ Bot = Client(
 async def start(bot: Client, cmd):
     return await cmd.reply_text(START_MESSAGE)
 
-@bot.on_message(filters.command('rip') & filters.private)
+@bot.on_message(filters.command('RIP') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**{message.chat.first_name}!**\n"
