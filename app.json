@@ -1,0 +1,33 @@
+{
+  "name": "sample bot",
+  "description": "Make short link by using Shortener using API key",
+  "logo": "https://i.ibb.co/1mwchh9/Screenshot-2022-07-08-at-11-06-34-AM.png",
+  "website": "https://github.com/T2links/",
+  "repository": "https://github.com/kevinnadar22/URL-Shortener-V2",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your bot token from @botfather",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
