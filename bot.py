@@ -15,4 +15,4 @@ Bot = Client(
 async def start(bot: Client, cmd):
     return await cmd.reply_text(START_MESSAGE)
 
-bot.run()
+Bot.run()
