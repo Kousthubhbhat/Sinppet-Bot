@@ -14,3 +14,5 @@ Bot = Client(
 @Bot.on_message(filters.command("start") & filters.private)
 async def start(bot: Client, cmd):
     return await cmd.reply_text(START_MESSAGE)
+
+bot.run()
